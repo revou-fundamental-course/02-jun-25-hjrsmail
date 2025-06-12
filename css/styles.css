@@ -19,6 +19,7 @@ body {
     padding: 0;
     font-family: 'Merriweather', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
     min-height: 100vh;
     background-color: var(--color-light);
 }
@@ -321,6 +322,10 @@ main {
     }
 }
 
+.banner{
+    margin-inline: auto;
+}
+
 
 .slider-container {
     position: relative;
@@ -375,10 +380,10 @@ button.next {
 .home-section {
     position: relative;
     display: flex;
+    margin-inline: auto;
     flex-direction: column-reverse;
     align-items: center;
     margin: 0;
-    max-width: 1440px;
     padding: 2.5rem 1rem;
     transition-duration: 300ms;
 }
@@ -659,6 +664,11 @@ button.next {
 
 /* sm: (min-width: 640px) */
 @media (min-width: 640px) {
+
+    .banner{
+        max-width: 1440px;
+    }
+
     .home-section {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
